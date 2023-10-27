@@ -1,0 +1,226 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+:root{
+  --btn-color:#3F687C;
+  --text-color:#FFFFFF;
+  --active-link:#88A1AD;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background: url(../assets/images/background.jpeg) ,  no-repeat;
+  background-size:cover ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+  font-family: Poppins;
+}
+.active{
+  color: var(--active-link)!important;;
+  border-bottom: 2px solid var(--active-link);
+}
+header {
+  background: transparent;
+  width: 100%;
+  height: 100px;
+}
+header nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 7rem;
+  padding-top: 1rem;
+}
+.brand{
+  display: flex;
+  align-items: center;
+  padding: calc(20px/16em);
+}
+.brand h3{
+  color: var(--text-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+}
+.links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+.links li a{
+  text-decoration: none;
+  margin-right: 50px;
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+.links li button{
+  width: 199px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 2px solid var(--text-color);
+  background: var(--btn-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+.links li button:hover{
+  background: transparent;
+}
+
+main{
+  width: 100%;
+  height: calc(100% - 100px);
+}
+
+.intor{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 7rem;
+  margin-top: 2.5rem;
+  padding: 0 100px;
+  margin-bottom: 140px;
+}
+
+.intor .info{
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  gap: 5px;
+}
+.intor .info p{
+  text-transform: uppercase;
+  color:var(--text-color);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+}
+.intor .info p .discount{
+  padding: 5px 30px;
+  border-radius: 50px;
+  border: 2px solid var(--text-color);
+  background: #304650;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-right: 16px;
+}
+.intor .info h1{
+  color: var(--text-color);
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 600;
+}
+.intro-btns{
+  display: flex;
+  align-items: center;
+}
+.intro-btn{
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.Explore-btn{
+  border-radius: 50px;
+  border: 2px solid #FFF;
+  background: #304650;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.arrow-icon{
+  transition: .5s ease-in-out;
+  padding-left: 10px;
+}
+.Explore-btn:hover .arrow-icon{
+  padding-left: 20px;
+
+}
+.watch-btn{
+  background: transparent;
+  border: none;
+}
+
+.teachers{
+  position: relative;
+  width: 80%;
+  height: 150px;
+  background: url(../assets/images/teachersBackground.png);
+  background-repeat: no-repeat;
+  margin: auto;
+  border-radius: 10px;
+}
+.instractore{
+  width: 300px!important;
+  height: 250px;
+  background: url(../assets/images/teacher-Bg.png);
+  background-repeat: no-repeat;
+  background-size:cover ;
+  position: absolute;
+  left: 30px;
+  top: -85%;
+  width: 100px;
+  margin-right: 0 110px;
+}
+.ins-1{
+  left:24.125rem;
+}
+.ins-2{
+  left: 44.25rem;
+}
+.ins-3{
+  left: 4.25rem;
+}
+
+.instractore .instractore-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+.instractore .instractore-info img{
+  width: 250px;
+  height: 150px;
+}
+.instractore3-rating{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.students{
+  display: inline-block;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+}
+.stars{
+  display: flex;
+  list-style: none;
+}
+
+@media only screen and (max-width: 1280px){
+  html{
+    font-size: 15px;
+  }  
+  .teachers{
+    height: 14rem;
+  }
+  .instractore{
+    top: -55%;
+  }
+}
